@@ -19,8 +19,8 @@ def emotion_detector(text_to_analyse):
 
     #If statement to assess whether to return the error response or proceed with formatting.
     if response.status_code == 400 or test_mode == True:
-        emotion_scores = {'anger' : 'None', 'disgust' : 'None', 'fear' : 'None',
-        'joy' : 'None', 'sadness' : 'None', 'dominant_emotion' : 'None'}
+        emotion_scores = {'anger' : str('None'), 'disgust' : str('None'), 'fear' : str('None'),
+        'joy' : str('None'), 'sadness' : str('None'), 'dominant_emotion' : str('None')}
     else:
         #Format the response
         formatted_response = json.loads(response.text)

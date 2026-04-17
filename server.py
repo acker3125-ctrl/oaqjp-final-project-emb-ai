@@ -15,7 +15,7 @@ def input_analyzer():
     
     #Format the output
     output = f"""For the given statement, the system response is 'anger': {results['anger']}, 
-    'disgust': {results['disgust']}, 'disgust': {results['disgust']}, 'fear': {results['fear']}, 'joy': {results['joy']}, 
+    'disgust': {results['disgust']}, 'fear': {results['fear']}, 'joy': {results['joy']}, 
     'sadness': {results['sadness']}. The dominant emotion is {results['dominant_emotion']}."""
     return output
 
